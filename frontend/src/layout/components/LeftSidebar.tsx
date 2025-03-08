@@ -33,7 +33,7 @@ const LeftSidebar = () => {
 						)}
 					>
 						<HomeIcon className='mr-2 size-5' />
-						<span className='hidden md:inline'>Home</span>
+						<span className='hidden md:inline'>Inicio</span>
 					</Link>
 
 					<SignedIn>
@@ -47,7 +47,7 @@ const LeftSidebar = () => {
 							)}
 						>
 							<MessageCircle className='mr-2 size-5' />
-							<span className='hidden md:inline'>Messages</span>
+							<span className='hidden md:inline'>Mensajes</span>
 						</Link>
 					</SignedIn>
 				</div>
