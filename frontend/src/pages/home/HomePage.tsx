@@ -51,7 +51,7 @@ const HomePage = () => {
               isLoading={isLoading}
             />
             <SectionGrid
-              title="Hecho para ti"
+              title="Canciones de tendencia"
               songs={trendingSongs}
               isLoading={isLoading}
             />
