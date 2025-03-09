@@ -1,0 +1,21 @@
+{
+  "name": "reactify-spotify-clone",
+  "version": "1.0.0",
+  "description": "Este es un clon de Spotify construido con **Node.js**, **React**, y otras tecnologías.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagibshg/Reactify.git"
+  },
+  "keywords": [],
+  "author": "Nagib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagibshg/Reactify/issues"
+  },
+  "homepage": "https://github.com/nagibshg/Reactify#readme"
+}
