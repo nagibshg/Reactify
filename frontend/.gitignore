@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencias y archivos de construcción
+node_modules/
+dist/
+dist-ssr/
+
+# Variables de entorno
+.env
+.env.local
+*.local
+
+# Archivos específicos de React/Vite
+.vite/
+.vite-cache/
+*.cache
+coverage/
+
+# Archivos del editor
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
