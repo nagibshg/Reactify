@@ -102,15 +102,15 @@ const AddSongDialog = () => {
       <DialogTrigger asChild>
         <Button className="bg-emerald-500 hover:bg-emerald-600 text-black">
           <Plus className="mr-2 h-4 w-4" />
-          Add Song
+          Añadir canción
         </Button>
       </DialogTrigger>
 
       <DialogContent className="bg-zinc-900 border-zinc-700 max-h-[80vh] overflow-auto">
         <DialogHeader>
-          <DialogTitle>Add New Song</DialogTitle>
+          <DialogTitle>Añadir nueva canción</DialogTitle>
           <DialogDescription>
-            Add a new song to your music library
+            Añade una nueva canción a tu biblioteca musical
           </DialogDescription>
         </DialogHeader>
 
@@ -156,10 +156,10 @@ const AddSongDialog = () => {
                     <Upload className="h-6 w-6 text-zinc-400" />
                   </div>
                   <div className="text-sm text-zinc-400 mb-2">
-                    Upload artwork
+                    Subir material
                   </div>
                   <Button variant="outline" size="sm" className="text-xs">
-                    Choose File
+                    Elegir archivo
                   </Button>
                 </>
               )}
@@ -168,7 +168,7 @@ const AddSongDialog = () => {
 
           {/* Subir audio */}
           <div className="space-y-2">
-            <label className="text-sm font-medium">Audio File</label>
+            <label className="text-sm font-medium">Archivo de audio</label>
             <div className="flex items-center gap-2">
               <Button
                 variant="outline"
@@ -177,14 +177,14 @@ const AddSongDialog = () => {
               >
                 {files.audio
                   ? files.audio.name.slice(0, 20)
-                  : "Choose Audio File"}
+                  : "Elegir archivo de audio"}
               </Button>
             </div>
           </div>
 
           {/* otros campos */}
           <div className="space-y-2">
-            <label className="text-sm font-medium">Title</label>
+            <label className="text-sm font-medium">Título de la canción</label>
             <Input
               value={newSong.title}
               onChange={(e) =>
@@ -195,7 +195,7 @@ const AddSongDialog = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-medium">Artist</label>
+            <label className="text-sm font-medium">Artista</label>
             <Input
               value={newSong.artist}
               onChange={(e) =>
@@ -206,7 +206,7 @@ const AddSongDialog = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-medium">Duration (seconds)</label>
+            <label className="text-sm font-medium">Duración (segundos)</label>
             <Input
               type="number"
               min="0"
@@ -219,7 +219,7 @@ const AddSongDialog = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-medium">Album (Optional)</label>
+            <label className="text-sm font-medium">Álbum (opcional)</label>
             <Select
               value={newSong.album}
               onValueChange={(value) =>
@@ -227,10 +227,10 @@ const AddSongDialog = () => {
               }
             >
               <SelectTrigger className="bg-zinc-800 border-zinc-700">
-                <SelectValue placeholder="Select album" />
+                <SelectValue placeholder="Seleccionar álbum" />
               </SelectTrigger>
               <SelectContent className="bg-zinc-800 border-zinc-700">
-                <SelectItem value="none">No Album (Single)</SelectItem>
+                <SelectItem value="none">Sencillo (Sin Álbum)</SelectItem>
                 {albums.map((album) => (
                   <SelectItem key={album._id} value={album._id}>
                     {album.title}
@@ -247,10 +247,10 @@ const AddSongDialog = () => {
             onClick={() => setSongDialogOpen(false)}
             disabled={isLoading}
           >
-            Cancel
+            Cancelar
           </Button>
           <Button onClick={handleSubmit} disabled={isLoading}>
-            {isLoading ? "Uploading..." : "Add Song"}
+            {isLoading ? "Subiendo..." : "Añadir canción"}
           </Button>
         </DialogFooter>
       </DialogContent>

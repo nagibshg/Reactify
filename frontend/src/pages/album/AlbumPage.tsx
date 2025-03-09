@@ -63,7 +63,7 @@ const AlbumPage = () => {
                 className="w-[240px] h-[240px] shadow-xl rounded"
               />
               <div className="flex flex-col justify-end">
-                <p className="text-sm font-medium">Album</p>
+                <p className="text-sm font-medium">Álbum</p>
                 <h1 className="text-7xl font-bold my-4">
                   {currentAlbum?.title}
                 </h1>
@@ -71,7 +71,7 @@ const AlbumPage = () => {
                   <span className="font-medium text-white">
                     {currentAlbum?.artist}
                   </span>
-                  <span>• {currentAlbum?.songs.length} songs</span>
+                  <span>• {currentAlbum?.songs.length} canciones</span>
                   <span>• {currentAlbum?.releaseYear}</span>
                 </div>
               </div>
@@ -104,8 +104,8 @@ const AlbumPage = () => {
             text-zinc-400 border-b border-white/5"
               >
                 <div>#</div>
-                <div>Title</div>
-                <div>Released Date</div>
+                <div>Título de la canción</div>
+                <div>Fecha de lanzamiento</div>
                 <div>
                   <Clock className="h-4 w-4" />
                 </div>

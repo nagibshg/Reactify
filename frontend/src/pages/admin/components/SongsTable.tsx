@@ -16,7 +16,7 @@ const SongsTable = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-8">
-        <div className="text-zinc-400">Loading songs...</div>
+        <div className="text-zinc-400">Cargando canciones...</div>
       </div>
     );
   }
@@ -34,10 +34,10 @@ const SongsTable = () => {
       <TableHeader>
         <TableRow className="hover:bg-zinc-800/50">
           <TableHead className="w-[50px]"></TableHead>
-          <TableHead>Title</TableHead>
-          <TableHead>Artist</TableHead>
-          <TableHead>Release Date</TableHead>
-          <TableHead className="text-right">Actions</TableHead>
+          <TableHead>Título de la canción</TableHead>
+          <TableHead>Artista</TableHead>
+          <TableHead>Fecha de lanzamiento</TableHead>
+          <TableHead className="text-right">Acciones</TableHead>
         </TableRow>
       </TableHeader>
 

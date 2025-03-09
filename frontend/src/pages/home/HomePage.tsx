@@ -41,19 +41,17 @@ const HomePage = () => {
       <Topbar />
       <ScrollArea className="h-[calc(100vh-180px)]">
         <div className="p-4 sm:p-6">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-6">
-            Good afternoon
-          </h1>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-6">¡Buen día!</h1>
           <FeaturedSection />
 
           <div className="space-y-8">
             <SectionGrid
-              title="Made For You"
+              title="Hecho para ti"
               songs={madeForYouSongs}
               isLoading={isLoading}
             />
             <SectionGrid
-              title="Trending"
+              title="Hecho para ti"
               songs={trendingSongs}
               isLoading={isLoading}
             />

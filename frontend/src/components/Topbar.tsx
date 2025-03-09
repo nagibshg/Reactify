@@ -1,7 +1,4 @@
-import {
-  SignedOut,
-  UserButton,
-} from "@clerk/clerk-react";
+import { SignedOut, UserButton } from "@clerk/clerk-react";
 import { LayoutDashboardIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import SignInOutButtons from "./SignInOutButtons";
@@ -30,7 +27,7 @@ const Topbar = () => {
             className={cn(buttonVariants({ variant: "outline" }))}
           >
             <LayoutDashboardIcon className="size-4 mr-2" />
-            Admin Dashboard
+            Panel de administración
           </Link>
         )}
 

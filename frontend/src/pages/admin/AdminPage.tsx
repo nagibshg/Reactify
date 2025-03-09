@@ -34,14 +34,14 @@ const AdminPage = () => {
             className="data-[state=active]:bg-zinc-700"
           >
             <Music className="mr-2 size-4" />
-            Songs
+            Canciones
           </TabsTrigger>
           <TabsTrigger
             value="albums"
             className="data-[state=active]:bg-zinc-700"
           >
             <Album className="mr-2 size-4" />
-            Albums
+            Álbumes
           </TabsTrigger>
         </TabsList>
 

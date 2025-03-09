@@ -19,7 +19,7 @@ const SectionGrid = ({ songs, title, isLoading }: SectionGridProps) => {
           variant="link"
           className="text-sm text-zinc-400 hover:text-white"
         >
-          Show all
+          Ver todo
         </Button>
       </div>
 

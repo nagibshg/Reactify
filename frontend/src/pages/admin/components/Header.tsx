@@ -9,8 +9,8 @@ const Header = () => {
           <img src="/spotify.png" className="size-10 text-black" />
         </Link>
         <div>
-          <h1 className="text-3xl font-bold">Music Manager</h1>
-          <p className="text-zinc-400 mt-1">Manage your music catalog</p>
+          <h1 className="text-3xl font-bold">Director musical</h1>
+          <p className="text-zinc-400 mt-1">Gestiona tu catálogo de música</p>
         </div>
       </div>
       <UserButton />
